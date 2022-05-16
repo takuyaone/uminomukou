@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&family=Roboto:wght@700&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>uminomukou</title>
+</head>
+<body>
+  <!-- PC版画面ナビメニュー -->
+  <div id="pc-header" class="down-move">
+    <div class="wrap">
+      <div class="nav-bar">
+        <div class="header-ttl">
+          <a href="#"><img src="./img/logo/header_logo.svg" alt=""></a>
+        </div>
+        <ul>
+          <li><a href="#">商品<br><span>Product</span></a></li>
+          <li><a href="#">ストーリー<br><span>Story</span></a></li>
+          <li><a href="#">ニュース<br><span>NEWS</span></a></li>
+          <li><a href="#">記事<br><span>Articles</span></a></li>
+          <li><a href="#">オンラインショップ<img src="./img/logo/icon_external.svg"><br><span>OnlineShop</span></a></li>
+        </ul>
+      </div>
+      <div class="pc-btns">
+        <a class="pc-btn" href="#">生豆のご購入<br><span>for Roasters&Cafes</span></a>
+        <a class="pc-btn" href="#">生豆価格表<br><span>Beans Price List</span></a>
+      </div>
+    </div>
+  </div>
+  <header id="header" class="down-move">
+    <div class="wrap">
+      <div class="header-ttl">
+        <a href="#">
+          <img src="./img/logo/header_logo.svg" alt="">
+        </a>
+      </div>
+      <div class="openbtn1" id="openbtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <nav id="g-nav">
+    <div id="g-nav-list">
+      <!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+      <ul class="items">
+        <li class="item">
+          <div class="item-ttl">商品<span>Product</span></div>
+          <ul class="products">
+            <li class="product"><a href="#">コーヒー<span>Coffee</span></a></li>
+            <li class="product"><a href="#">カスカラ<span>カスカラ</span></a></li>
+            <li class="product"><a href="#">コーヒー生豆<span>Beans</span><img src="./img/logo/icon_external.svg"></a></li>
+            <li class="product"><a href="#">生豆の価格表<span>Beans Price List</span><img
+                  src="./img/logo/icon_external.svg"></a></li>
+          </ul>
+        </li>
+        <li class="item"><a class="item-menu" href="#">ストーリー<span>Story</span></a></li>
+        <li class="item"><a class="item-menu" href="#">ニュース<span>NEWS</span></a></li>
+        <li class="item"><a class="item-menu" href="#">記事<span>Articles</span></a></li>
+        <li class="item"><a class="item-menu" href="#">オンラインショップ<span>OnlineShop</span><img src="./img/logo/icon_external.svg"></a></li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="#">生豆のご購入<br><span>for Roasters&Cafes</span></a>
+        <a class="btn" href="#">生豆価格表<br><span>Beans Price List</span></a>
+      </div>
+      <div class="nav-footer">
+        <ul class="company">
+          <li>お問い合わせ<span>Contact</span></li>
+          <li>運営企業<span>About us</span></li>
+        </ul>
+        <ul class="sns">
+          <li><a class="facebook" href="#"><img src="./img/logo/icon_facebook.svg"></a></li>
+          <li><a class="instagram" href="#"><img src="./img/logo/icon_instagram.svg"></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="movie-area" data-movie="https://uminomukou.com/wp/wp-content/uploads/2019/02/hero_movie.mp4"
+    style="background-image:url()">
+    <video class="video" data-object-fit="cover" autoplay loop muted>
+      <source src="https://uminomukou.com/wp/wp-content/uploads/2019/02/hero_movie.mp4" type="video/mp4">
+    </video>
+    <img src="./img/logo/hero_logo.png">
+  </div>
+  <div class="mask-area"></div>
+  <a id="scrl-area" class="scrl-area" href="#"><span class="text">scroll</span></a>
+  <div class="slide-area">
+    <h1 class="logo-area"><img src="./img/logo/hero_logo.png"></h1>
+  </div>
+  <section class="head">
+    <div class="container">
+      <div class="head-ttl js-scroll-animation">
+        <h2>遠くに思いを馳せる、<br class="indention">想像力を。</h2>
+        <img src="./img/head/head_copy.png">
+      </div>
+      <div class="sentence chenge-time2 js-scroll-animation">
+        <p>コーヒーを飲むとき、
+          そのコーヒーが育つ海の向こうに想いを馳せてみてほしい。<br>美しい自然、そこに住む人たちの暮らし、そしてその未来。
+        </p>
+        <p>海ノ向こうコーヒーは、各地のストーリーとともに、おいしいコーヒーをみなさんにお届けします。</p>
+      </div>
+      <img class="head-img1" src="./img/head/head_img01.png">
+      <img class="head-img2" src="./img/head/head_img02.png">
+      <img class="head-img3" src="./img/head/head_img03_sp.png">
+      <img class="head-img4" src="./img/head/head_img03_pc.png">
+      <img class="head-img5" src="./img/head/head_img06.png">
+      <img class="head-pic1 chenge-time1 js-scroll-animation" src="./img/head/head_img04.jpg">
+      <img class="head-pic2 chenge-time1 js-scroll-animation" src="./img/head/head_img05.jpg">
+      <img class="head-pic3 chenge-time1 js-scroll-animation" src="./img/head/head_img07.jpg">
+    </div>
+  </section>
+  <section class="main-product">
+    <div class="container">
+      <div class="product-ttl">
+        <h2>商品</h2>
+      </div>
+      <div class="product-cards">
+        <a href="#" class="product-card">
+          <img src="./img/products/coffee_main-720x432.jpg" alt="">
+          <div class="product-text">
+            <h3>コーヒー</h3>
+            <p>私たちがアジアの国々を訪れ、農家さんや精製所と直接話し合い、品質向上に取り組んでいるコーヒーです。それぞれ味の特徴が異なる個性ゆたかなコーヒーをお楽しみください。</p>
+            <div class="product-more"><span>MORE→</span></div>
+          </div>
+        </a>
+        <a href="#" class="product-card">
+          <img src="./img/products/cascara_main-1-720x432.jpg" alt="">
+          <div class="product-text">
+            <h3>カスカラ</h3>
+            <p>カスカラとは、コーヒーの果皮を乾燥させたもの。真っ赤に熟したコーヒーチェリーを使用しています。シロップやパウダーなど、コーヒーをまるごと楽しめる商品たちです。</p>
+            <div class="product-more"><span>MORE→</span></div>
+          </div>
+        </a>
+        <a href="#" class="product-card">
+          <img src="./img/products/coffee_philippine04.jpg" alt="">
+          <div class="product-text">
+            <h3>コーヒー生豆</h3>
+            <p>世界各国からセレクトしたコーヒーの生豆を取り扱っています。美味しさはもちろんのこと、環境やコミュニティへの配慮なども含め、独自の視点でセレクトした生豆を種類豊富にご用意しています。</p>
+            <div class="product-more"><span>MORE→</span></div>
+          </div>
+        </a>
+        <a href="#" class="product-card">
+          <img src="./img/products/price-list.jpg" alt="">
+          <div class="product-text">
+            <h3>生豆の価格表</h3>
+            <p>海ノ向こうコーヒーで取り扱っている生豆のラインナップや価格表をご覧いただけます。小分け（1kg・5kg）の取り扱いの他、原袋（30kg）でのお取り置きも可能です。</p>
+            <div class="product-more"><span>MORE→</span></div>
+          </div>
+        </a>
+      </div>
+      <div class="banner">
+        <a href="#"></a>
+      </div>
+    </div>
+  </section>
+  <section class="story">
+    <div class="container">
+      <div class="story-ttl">
+        <h3>ストーリー</h3>
+      </div>
+      <p>産地を訪れて、私たちはたくさんの物語に出会いました。<br> どんな場所で、どんな人たちが、どんな想い でコーヒーをつくっているのか。<br> そのストーリーが、コーヒーをさらに味わい深くしてくれます。<br> ぜひ、
+      海の向こうに想いを馳せながら読んでみてください。</p>
+      <div class="story-imgs">
+        <a href="#" class="story-img">
+          <img src="./img/story/story_laos.jpg">
+          <div class="story-name">
+            <span class="name-area">ラオス</span>
+            <span class="arrow-right"></span>
+          </div>
+        </a>
+        <a href="#" class="story-img">
+          <img src="./img/story/story_myanmar.jpg">
+          <div class="story-name">
+            <span class="name-area">ミャンマー</span>
+            <span class="arrow-right"></span>
+          </div>
+        </a>
+        <a href="#" class="story-img">
+          <img src="./img/story/story_philippine.jpg">
+          <div class="story-name">
+            <span class="name-area">フィリピン</span>
+            <span class="arrow-right"></span>
+          </div>
+        </a>
+        <a href="#" class="story-img">
+          <img src="./img/story/yemen_03_4.jpg">
+          <div class="story-name">
+            <span class="name-area">イエメン</span>
+            <span class="arrow-right"></span>
+          </div>
+        </a>
+        <a href="#" class="story-img">
+          <img src="./img/story/vali.jpg">
+          <div class="story-name">
+            <span class="name-area">バリ</span>
+            <span class="arrow-right"></span>
+          </div>
+        </a>
+        <a href="#" class="story-img">
+          <img src="./img/story/Yunnan_Coffee_2.jpg">
+          <div class="story-name">
+            <span class="name-area">雲南</span>
+            <span class="arrow-right"></span>
+          </div>
+        </a>
+        <a href="#" class="story-img">
+          <img src="./img/story/thailand.jpg">
+          <div class="story-name">
+            <span class="name-area">タイ</span>
+            <span class="arrow-right"></span>
+          </div>
+        </a>
+        <a href="#" class="story-img">
+          <img src="./img/story/nepal.jpg">
+          <div class="story-name">
+            <span class="name-area">ネパール</span>
+            <span class="arrow-right"></span>
+          </div>
+        </a>
+
+      </div>
+      <div class="list-show">
+        <a href="#">一覧を見る<span class="arrow-right"></span></a>
+      </div>
+    </div>
+    <img class="story-logo1" src="./img/story/story_img_sp01.png">
+    <img class="story-logo2" src="./img/story/story_img_sp02.png">
+    <img class="story-logo3" src="./img/story/story_img_sp03.png">
+    <img class="story-logo4" src="./img/story/story_img_pc01.png">
+    <img class="story-logo5" src="./img/story/story_img_pc02.png">
+
+  </section>
+  <section class="news">
+    <div class="container">
+      <div class="news-ttl">
+        <h3>NEWS</h3>
+        <p>ニュース</p>
+      </div>
+      <div class="news-list">
+        <a class="news-item">
+          <div class="img-area">
+            <img src="./img/news/coffee-regular.jpg">
+          </div>
+          <div class="news-centence">
+            <p class="date">2021.01.29</p>
+            <p>婦人画報オンラインにて「産地を旅するコーヒー定期便」が紹介されました</p>
+          </div>
+        </a>
+        <a class="news-item">
+          <div class="img-area">
+            <img src="./img/news/noimage_news.jpg">
+          </div>
+          <div class="news-centence">
+            <p class="date">2021.01.08</p>
+            <p>内閣府国際広報動画にて海ノ向こうコーヒーの取り組みが紹介されました</p>
+          </div>
+        </a>
+        <a class="news-item">
+          <div class="img-area">
+            <img src="./img/news/noimage_news.jpg">
+          </div>
+          <div class="news-centence">
+            <p class="date">2020.06.24</p>
+            <p>水出しコーヒーセット販売開始しました！</p>
+          </div>
+        </a>
+        <a class="news-item">
+          <div class="img-area">
+            <img src="./img/news/exclusive.jpg">
+          </div>
+          <div class="news-centence">
+            <p class="date">2020.06.14</p>
+            <p>【限定商品】海ノ向こうコーヒー × ジャパンコーヒーフェスティバルの共同企画商品発売！</p>
+          </div>
+        </a>
+        <a class="news-item">
+          <div class="img-area">
+            <img src="./img/news/uminomukou.jpg">
+          </div>
+          <div class="news-centence">
+            <p class="date">2020.05.01</p>
+            <p>海ノ向こうコーヒー Podcast配信を始めました！</p>
+          </div>
+        </a>
+        <a class="news-item">
+          <div class="img-area">
+            <img src="./img/news/coffee-bag.jpg">
+          </div>
+          <div class="news-centence">
+            <p class="date">2020.03.06</p>
+            <p>コーヒーバッグが新しくなりました！</p>
+          </div>
+        </a>
+      </div>
+      <div class="list-show">
+        <a href="#">一覧を見る<span class="arrow-right"></span></a>
+      </div>
+    </div>
+  </section>
+  <section class="articles">
+    <div class="container">
+      <div class="article-ttl">
+        <h3>Articles</h3>
+        <p>記事</p>
+      </div>
+      <div class="article-items">
+        <a class="article-item" href="#">
+          <div class="article-img">
+            <img src="./img/article/unnamed-720x480.jpg">
+            <div class="date">2021.09.27</div>
+          </div>
+          <p>ネパールでコーヒーをつくる。わたしたちの挑戦(2)</p>
+          <div class="tag">
+            <p>産地の話</p>
+          </div>
+        </a>
+        <a class="article-item" href="#">
+          <div class="article-img">
+            <img src="./img/article/IMG_0305-720x480.jpg">
+            <div class="date">2021.09.27</div>
+          </div>
+          <p>ネパールでコーヒーをつくる。わたしたちの挑戦(1)</p>
+          <div class="tag">
+            <p>産地の話</p>
+          </div>
+        </a>
+        <a class="article-item" href="#">
+          <div class="article-img">
+            <img src="./img/article/Roast.jpg">
+            <div class="date">2021.09.15</div>
+          </div>
+          <p>The Roast コーヒービーンズマスターシニアコース</p>
+          <div class="tag roast">
+            <p>The Roastのはなし</p>
+          </div>
+        </a>
+      </div>
+      <div class="list-show">
+        <a href="#">一覧を見る<span class="arrow-right"></span></a>
+      </div>
+    </div>
+  </section>
+  <section class="wholesale">
+    <div class="container">
+      <div class="wholesale-ttl">
+        <p>生豆・焼豆の卸売について</p>
+      </div>
+      <div></div>
+      <h3 class="subttl">海ノ向こうコーヒーの商品を、<br>お店で扱いませんか？</h3>
+      <div class="wholesale-content">
+        <ul class="img-area">
+          <li>
+            <img src="./img/wholesale/wholesale_products01.jpg">
+          </li>
+          <li>
+            <img src="./img/wholesale/wholesale_products02.jpg">
+          </li>
+        </ul>
+        <div class="text-area">
+          <p>
+            アジアのスペシャルテイコーヒーを中心に、品質はもちろん、環境や社会への配慮なども評価基準として厳選した各地の生豆・焼豆を取り 扱っています。サンプルもありますのでお気軽にお間い合わせください。
+          </p>
+          <div class="list-show">
+            <a href="#">卸売りについて<span class="arrow-right"></span></a>
+          </div>
+        </div>
+
+      </div>
+      <h3 class="subttl">海ノ向こうコーヒーが<br>飲める・買えるお店</h3>
+      <div class="store-lists">
+        <ul class="slider">
+          <li class="slider-item slider-item01">
+            <img src="./img/wholesale/soil_kyoto.jpg">
+            <p>坂ノ途中soli (京都)</p>
+          </li>
+          <li class="slider-item slider-item02">
+            <img src="./img/wholesale/ikariya_coffee.jpg">
+            <p>IKARIYA COFFEE KYOTO (京都)</p>
+          </li>
+          <li class="slider-item slider-item03">
+            <img src="./img/wholesale/arisecoffeeroasters.jpg">
+            <p>ARISE COFFEE ROASTERS (東京)</p>
+          </li>
+          <li class="slider-item slider-item04">
+            <img src="./img/wholesale/BAKU.jpg">
+            <p>BAKU Coffee Roasters (東京)</p>
+          </li>
+          <li class="slider-item slider-item05">
+            <img src="./img/wholesale/coffeePARK.jpg">
+            <p>coffee PARK (熊本)</p>
+          </li>
+          <li class="slider-item slider-item06">
+            <img src="./img/wholesale/coffeemart.jpg">
+            <p>自家焙煎珈琲コーヒーマート (石川)</p>
+          </li>
+        </ul>
+      </div>
+      <div class="list-show">
+        <a href="#">一覧を見る<span class="arrow-right"></span></a>
+      </div>
+      <img class="wholesale-img1" src="./img/wholesale/wholesale_img_sp01.png">
+      <img class="wholesale-img2" src="./img/wholesale/wholesale_img_pc01.png">
+      <img class="wholesale-img3" src="./img/wholesale/wholesale_img_pc02.png">
+      <img class="wholesale-img4" src="./img/wholesale/wholesale_img_pc03.png">
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <div class="about-ttl">
+        <h3>About us</h3>
+        <p>私たちについて</p>
+      </div>
+      <div class="box about-box1">
+        <div class="text-area">
+          <div class="title-logo"></div>
+          <p>
+            海ノ向こうコーヒーは、株式会社坂ノ途中のコーヒー部門です。坂ノ途中は、環境負荷の小さな農業、農薬や化学肥料に頼らない農業を営む農家さんを増やしていくためのさまざまな事業を行っています。それを通じて、持続可能な農業、ひいては持続可能な社会に辿り着きたいと考えています。
+          </p>
+        </div>
+        <img src="./img/about/about_img01.jpg">
+      </div>
+      <div class="box about-box2">
+        <div class="text-area">
+          <p>
+            持続可能な社会の実現に向けた活動は、日本国内にとどまりません。2012年にはウガンダでの活動をはじめ、2016年からはラオス北部でコーヒー事業「メコンオーガニックプロジェクト」をはじめました。その後、地域はミャンマーやフイリピンへと広がっていき、2018年に新しく立ち上げたブランドが「海ノ向こうコーヒー」です。私たちの挑戦は、はじまったばかりです。まだ見ぬ産地に光を当て、コーヒーカップの向こう側に想いを馳せてもらえるよう、今後も挑戦を続けます。
+          </p>
+        </div>
+        <img src="./img/about/about_img02.jpg">
+      </div>
+      <div class="staff-list">
+        <ul>
+          <li>
+            <img src="./img/about/yoshimura_s.png">
+            <p class="name-en">Yosimura Yuki</p>
+            <p class="name-ja">吉村 友希<br><span>マネージャー</span></p>
+          </li>
+          <li>
+            <img src="./img/about/staff_fujiwara.jpg">
+            <p class="name-en">Fujiwara Nario</p>
+            <p class="name-ja">藤原 真梨央<br><span>営業・Qグレーダー</span></p>
+          </li>
+          <li>
+            <img src="./img/about/masuda_2.jpg">
+            <p class="name-en">Masuda Nao</p>
+            <p class="name-ja">舛田 菜緒<br><span>焙煎士・産地担当</span></p>
+          </li>
+          <li>
+            <img src="./img/about/imamura_2.jpg">
+            <p class="name-en">Imamura Tomoka</p>
+            <p class="name-ja">今村 友香<br><span>出荷・商品開発</span></p>
+          </li>
+          <li>
+            <img class="hiro-img" src="./img/about/hiro.png">
+            <p class="name-en">Yamamoto Hirofumi</p>
+            <p class="name-ja">山本 博文<br><span>産地担当</span></p>
+          </li>
+        </ul>
+      </div>
+      <div class="site-btn">
+        <a href="#">坂ノ途中のWebサイトへ<span class="arrow-right"></span></a>
+      </div>
+    </div>
+  </section>
+  <a id="page-top" class="page-top" href="#"></a>
+  <section class="menu">
+      <div class="menu-list">
+        <!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+        <ul class="items">
+          <li class="item">
+            <div class="item-ttl">商品<span>Product</span></div>
+            <ul class="products">
+              <li class="product"><a href="#">コーヒー<span>Coffee</span></a></li>
+              <li class="product"><a href="#">カスカラ<span>カスカラ</span></a></li>
+              <li class="product"><a href="#">コーヒー生豆<span>Beans</span><img src="./img/logo/icon_external_white.svg"></a></li>
+              <li class="product"><a href="#">生豆の価格表<span>Beans Price List</span><img
+                    src="./img/logo/icon_external_white.svg"></a></li>
+            </ul>
+          </li>
+          <li class="item"><a class="item-menu" href="#">ストーリー<span>Story</span></a></li>
+          <li class="item"><a class="item-menu" href="#">ニュース<span>NEWS</span></a></li>
+          <li class="item"><a class="item-menu" href="#">記事<span>Articles</span></a></li>
+          <li class="item"><a class="item-menu" href="#">オンラインショップ<span>OnlineShop</span><img src="./img/logo/icon_external_white.svg"></a></li>
+        </ul>
+        <div class="menu-btns">
+          <a class="menu-btn" href="#">生豆のご購入<br><span>for Roasters&Cafes</span></a>
+          <a class="menu-btn" href="#">生豆価格表<br><span>Beans Price List</span></a>
+        </div>
+      </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="logos">
+        <img src="./img/logo/footer_logo_umi.png">
+        <img src="./img/logo/footer_logo_ots.png">
+      </div>
+      <div class="contact">
+        <p>株式会社坂ノ途中</p>
+        <p>〒601-8101 京都府京都市南区上鳥羽高畠町56</p>
+        <a href="#">お問い合わせ</a>
+      </div>
+      <div class="sns-icons">
+        <a href="#"><img src="./img/logo/icon_facebook.svg"></a>
+        <a href="#"><img src="./img/logo/icon_instagram.svg"></a>
+      </div>
+    </div>
+  </footer>
+  <a id="pcpage-top" href="#"></a>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="js/scroll.js"></script>
+  <script src="js/slide.js"></script>
+  <script src="js/drawar.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/jquery.bgswitcher.js"></script>
+</body>
+</html>
